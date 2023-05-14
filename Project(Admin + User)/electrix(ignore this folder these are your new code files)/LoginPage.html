@@ -1,0 +1,119 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+            <script src="/js/validation.js" defer></script>
+
+
+    <link rel="stylesheet" href="StyleLogin.css" />
+    <title>Sign in & Sign up Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="#" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required />
+                    </div>
+
+                    <a href="MainPage.html">
+                  <button class="Login-btn" onclick="BuyerLogin()">Login</button>
+
+                    </a>
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="process_SignupPage.php" method="post" class="sign-up-form" novalidate>
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id = "Username" name  = "Username" placeholder="Username" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id = "Email"  name = "Email" placeholder="XXXX@gmail.com" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id = "Password" name = "Password" placeholder="Password" required />
+                    </div>
+                     <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="CNIC" id = "CNIC" name = "CNIC" placeholder="CNIC" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="PhoneNum" id = "PhoneNum" name = "PhoneNum" placeholder="PhoneNum" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="PhoneNum" id = "PhoneNum" name = "PhoneNum" placeholder="PhoneNum" required />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="Address" id = "Address" name = "Address" placeholder="Address" required />
+                    </div>
+                    <a href="MainPage.html"></a>
+                    <button type="button" class="btn solid" onclick="AdminSignUp()">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Create Account</h3>
+                    <p>
+                Our Company is Fully scalable with regard to the connected devices and to the software's function
+                to meet current and future needs.
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Already An Account?</h3>
+                    <p>
+                        Sign-In to Your Account
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="LoginPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Help.css">
+</head>
+
+<body>
+    <nav>
+        <div class = "sidebar-top">
+            <span class = "shrink-btn">
+                <i class='bx bx-chevron-left'></i>
+            </span>
+            <img src = "G:\My Drive\University\Semester 4\DBMS Lab\DB Project\Project\White_LogoPNG.png" class="logo" alt="" href = "DashBoardAdmin.html">
+            <span class = "hide" href = "DashboardAdmin.html">
+            <h3 class = "hide">Electra</h3>
+            </span>
+        </div>
+
+        <div class="sidebar-links">
+            <ul>
+                <div class="active-tab"></div>
+                <li class="tooltip-element" data-tooltip="0">
+                    <a href="DashboardAdmin.html" class="active" data-active="0">
+                        <div class="icon">
+                            <i class='bx bx-tachometer'></i>
+                            <i class='bx bxs-tachometer'></i>
+                        </div>
+                        <span class="link hide">Dashboard</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="1">
+                    <a href="MeterRequestsAdmin.html" data-active="1">
+                        <div class="icon">
+                            <i class='bx bx-folder'></i>
+                            <i class='bx bxs-folder'></i>
+                        </div>
+                        <span class="link hide">Meter Requests</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="2">
+                    <a href="RegisterEmployeeAdmin.html" data-active="2">
+                        <div class="icon">
+                            <i class='bx bx-message-square-detail'></i>
+                            <i class='bx bxs-message-square-detail'></i>
+                        </div>
+                        <span class="link hide">Register Employee</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="3">
+                    <a href="FeedbackAdmin.html" data-active="3">
+                        <div class="icon">
+                            <i class='bx bx-bar-chart-square'></i>
+                            <i class='bx bxs-bar-chart-square'></i>
+                        </div>
+                        <span class="link hide">Feedback</span>
+                    </a>
+                </li>
+                <div class="tooltip">
+                    <span class="show">DashBoard</span>
+                    <span>Meter Requests</span>
+                    <span>Register Employee</span>
+                    <span>Feedback</span>
+                </div>
+            </ul>
+
+            <h4 class="hide">Shortcuts</h4>
+
+            <ul>
+                <li class="tooltip-element" data-tooltip="0">
+                    <a href="Help.html" data-active="4">
+                        <div class="icon">
+                            <i class='bx bx-help-circle'></i>
+                            <i class='bx bxs-help-circle'></i>
+                        </div>
+                        <span class="link hide">Help</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="1">
+                    <a href="SettingAdmin.html" data-active="5">
+                        <div class="icon">
+                                <i class='bx bx-cog'></i>
+                                <i class='bx bxs-cog'></i>
+                        </div>
+                        <span class="link hide">Settings</span>
+                    </a>
+                </li>
+                <div class="tooltip">
+                    <span>Help</span>
+                    <span>Settings</span>
+                </div>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <a href="#" class="account tooltip-element" data-tooltip="0">
+                <i class='bx bx-user'></i>
+            </a>
+            <div class="admin-user tooltip-element" data-tooltip="1">
+                <div class="admin-profile hide">
+                    <img src="./img/face-1.png" alt="">
+                    <div class="admin-info">
+                        <h3>Logout</h3>
+                    </div>
+                </div>
+                <a href="LoginPage.html" class="log-out">
+                    <i class='bx bx-log-out'></i>
+                </a>
+            </div>
+            <div class="tooltip">
+               
+                <span>Logout</span>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <h1 class = "HelpTxt">Help</h1>
+        <h2 class = "FAQTxt">FAQ</h2>
+
+
+  <label for="touch" class = "Questions"><span>Q. How do i apply for a new meter connection?</span></label>               
+  <input type = "checkbox" id = "touch"> 
+
+  <ul class="slide">
+    <li><a href="#" class = "Answers">Ans. Press the Request New Meter tab in the sidebar, fill out the form provided, an order id and lineman will be assigned to your request.</a></li> 
+  </ul>
+
+<label for="touch2" class = "Questions"><span>Q. How do i retrieve my bills?</span></label>               
+  <input type = "checkbox" id = "touch2"> 
+
+  <ul class="slide">
+    <li><a href="#" class = "Answers">Ans..</a></li> 
+  </ul>
+
+  <label for="touch3" class = "Questions"><span>Q. What to do if bill wrong?</span></label>               
+  <input type = "checkbox" id = "touch3"> 
+
+  <ul class="slide">
+    <li><a href="#" class = "Answers">Ans. Contact us with any anomalies you find in your bill.</a></li> 
+  </ul>
+
+<label for="touch4" class = "Questions"><span>Q. How to change Username or Password?</span></label>               
+  <input type = "checkbox" id = "touch4"> 
+
+  <ul class="slide">
+    <li><a href="#" class = "Answers">Ans. Press the request tab in the sidebar and write your new password or username.</a></li> 
+  </ul>
+
+         <h2 class = "ContactUsTxt">Contact Us</h2>
+         <h3 class = "ContactUsHeading">Talk to our representitives:<br></h3>
+   
+            <a  class = "ContactUsContent" href= “tel:+03211680699”>Mobile: 03211680699<br></a>
+           <a class = "ContactUsContent" href = mailto:l215235@lhr.nu.edu.pk> Email: l215235@lhr.nu.edu.pk</a>
+    </main>
+
+    <script src="MainPage.js"></script>
+</body>
+
+</html>
