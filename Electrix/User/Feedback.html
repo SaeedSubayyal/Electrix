@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Feedbackstyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <nav>
+         <div class = "sidebar-top">
+            <span class = "shrink-btn">
+                <i class='bx bx-chevron-left'></i>
+            </span>
+            <img src = "G:\My Drive\University\Semester 4\DBMS Lab\DB Project\Project\White_LogoPNG.png" class="logo" alt="" href = "DashBoard.html">
+            <span class = "hide" href = "Dashboard.html">
+            <h3 class = "hide">Electrix</h3>
+            </span>
+        </div>
+
+        <div class="sidebar-links">
+            <ul>
+                <div class="active-tab"></div>
+                <li class="tooltip-element" data-tooltip="0">
+                    <a href="Dashboard.html" class="active" data-active="0">
+                        <div class="icon">
+                            <i class='bx bx-tachometer'></i>
+                            <i class='bx bxs-tachometer'></i>
+                        </div>
+                        <span class="link hide">Dashboard</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="1">
+                    <a href="RequestNewMeter.html" data-active="1">
+                        <div class="icon">
+                            <i class='bx bx-folder'></i>
+                            <i class='bx bxs-folder'></i>
+                        </div>
+                        <span class="link hide">Request New Meter</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="2">
+                    <a href="RetrieveBill.html" data-active="2">
+                        <div class="icon">
+                            <i class='bx bx-message-square-detail'></i>
+                            <i class='bx bxs-message-square-detail'></i>
+                        </div>
+                        <span class="link hide">Retrieve Bill</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="3">
+                    <a href="Feedback.html" data-active="3">
+                        <div class="icon">
+                            <i class='bx bx-bar-chart-square'></i>
+                            <i class='bx bxs-bar-chart-square'></i>
+                        </div>
+                        <span class="link hide">Feedback</span>
+                    </a>
+                </li>
+                <div class="tooltip">
+                    <span class="show">DashBoard</span>
+                    <span>Request New Meter</span>
+                    <span>Retrieve Bill</span>
+                    <span>Feedback</span>
+                </div>
+            </ul>
+
+            <h4 class="hide">Shortcuts</h4>
+
+            <ul>
+                <li class="tooltip-element" data-tooltip="0">
+                    <a href="Help.html" data-active="4">
+                        <div class="icon">
+                            <i class='bx bx-help-circle'></i>
+                            <i class='bx bxs-help-circle'></i>
+                        </div>
+                        <span class="link hide">Help</span>
+                    </a>
+                </li>
+                <li class="tooltip-element" data-tooltip="1">
+                    <a href="Setting.html" data-active="5">
+                        <div class="icon">
+                                <i class='bx bx-cog'></i>
+                                <i class='bx bxs-cog'></i>
+                        </div>
+                        <span class="link hide">Settings</span>
+                    </a>
+                </li>
+                <div class="tooltip">
+                    <span>Help</span>
+                    <span>Settings</span>
+                </div>
+            </ul>
+        </div>
+
+<a class='button glyphicon glyphicon-plus' href='#'></a>
+
+        <div class="sidebar-footer">
+            <a href="#" class="account tooltip-element" data-tooltip="0">
+                <i class='bx bx-user'></i>
+            </a>
+            <div class="admin-user tooltip-element" data-tooltip="1">
+                <div class="admin-profile hide">
+                    <img src="./img/face-1.png" alt="">
+                    <div class="admin-info">
+                        <h3>Logout</h3>
+                    </div>
+                </div>
+                <a href="LoginPage.html" class="log-out">
+                    <i class='bx bx-log-out'></i>
+                </a>
+            </div>
+            <div class="tooltip">
+               
+                <span>Logout</span>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <h1>Feedback</h1>
+        <h3 class = "Feedbackprompt">Please insert MeterMan's Name<br></h3>
+    <form action="feedback.php" method="post" class="feedback-form" novalidate>
+        <div class="input-field">
+            <i class='bx bxs-edit'></i>
+            <input type="text" id="Username" name="Username" placeholder=" Full Name of MeterMan" required />
+          </div> 
+    
+    <h3 class = "Feedbackprompt">Please fill out this form to reflect your experience with us:<br></h3>
+
+        <p class="Qprompt">Was the response time to your request satisfactory?</p>
+        <input type="radio" id="ResponseTimeyes" name="ResponseTime" value="yes" class="Options">
+        <label for="ResponseTimeyes" class="Options">Yes</label><br>
+        <input type="radio" id="ResponseTimeno" name="ResponseTime" value="no" class="Options">
+        <label for="ResponseTimeno" class="Options">No</label><br>
+      
+        <p class="Qprompt">Was the lineman's behavior professional?</p>
+        <input type="radio" id="LinemanProfessionyes" name="LinemanProfession" value="yes" class="Options">
+        <label for="LinemanProfessionyes" class="Options">Yes</label><br>
+        <input type="radio" id="LinemanProfessionno" name="LinemanProfession" value="no" class="Options">
+        <label for="LinemanProfessionno" class="Options">No</label><br>
+      
+        <p class="Qprompt">Did the MeterMan ask for a bribe?</p>
+        <input type="radio" id="Bribeyes" name="Bribe" value="yes" class="Options">
+        <label for="Bribeyes" class="Options">Yes</label><br>
+        <input type="radio" id="Bribeno" name="Bribe" value="no" class="Options">
+        <label for="Bribeno" class="Options">No</label><br>
+      
+        <p class="Qprompt">Is your connection working fine?</p>
+        <input type="radio" id="Connectionyes" name="Connection" value="yes" class="Options">
+        <label for="Connectionyes" class="Options">Yes</label><br>
+        <input type="radio" id="Connectionno" name="Connection" value="no" class="Options">
+        <label for="Connectionno" class="Options">No</label><br>
+      
+        <p class="Qprompt">Did you pay the price between 6000-7000 Rupees?</p>
+        <input type="radio" id="Priceyes" name="Price" value="yes" class="Options">
+        <label for="Priceyes" class="Options">Yes</label><br>
+        <input type="radio" id="Priceno" name="Price" value="no" class="Options">
+        <label for="Priceno" class="Options">No</label><br>
+      
+        <h3 class="Feedbackprompt">Please write down your complaints and specifically mention if the MeterMan asked for a bribe:</h3>
+        <div class="input-field">
+          <i class='bx bxs-edit'></i>
+          <input type="text" id="Complaints" name="Complaints" placeholder="Share your thoughts with us..." required />
+        </div> 
+        <button type="submit" onclick="FeedbackForm()" class="btn solid">Submit</button>
+      </form>
+      
+    </main>
+    <script src="feedback.js"></script>
+</body>
+</html>
